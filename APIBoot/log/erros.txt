@@ -1,0 +1,90 @@
+/home/maanaim-som/estudos/springWithGradle/APIBoot/src/main/java/com/marcos/springwithgradle/DTO/request/Filmes.java:6: error: class FilmeRequest is public, should be declared in a file named FilmeRequest.java
+public record FilmeRequest(
+       ^
+/home/maanaim-som/estudos/springWithGradle/APIBoot/src/main/java/com/marcos/springwithgradle/controller/Controller.java:18: error: cannot find symbol
+import com.marcos.springwithgradle.dto.request.Filmes;
+                                              ^
+  symbol:   class Filmes
+  location: package com.marcos.springwithgradle.dto.request
+/home/maanaim-som/estudos/springWithGradle/APIBoot/src/main/java/com/marcos/springwithgradle/controller/Controller.java:52: error: cannot find symbol
+    public ResponseEntity<String> valid(@RequestBody @Valid Filmes filmes){
+                                                            ^
+  symbol:   class Filmes
+  location: class Controller
+/home/maanaim-som/estudos/springWithGradle/APIBoot/src/main/java/com/marcos/springwithgradle/controller/Controller.java:52: error: cannot find symbol
+    public ResponseEntity<String> valid(@RequestBody @Valid Filmes filmes){
+                                                      ^
+  symbol:   class Valid
+  location: class Controller
+/home/maanaim-som/estudos/springWithGradle/APIBoot/src/main/java/com/marcos/springwithgradle/controller/Controller.java:51: error: cannot find symbol
+    @PostMapping
+     ^
+  symbol:   class PostMapping
+  location: class Controller
+5 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  /home/maanaim-som/estudos/springWithGradle/APIBoot/src/main/java/com/marcos/springwithgradle/controller/Controller.java:18: error: cannot find symbol
+  import com.marcos.springwithgradle.dto.request.Filmes;
+                                                ^
+    symbol:   class Filmes
+    location: package com.marcos.springwithgradle.dto.request
+  /home/maanaim-som/estudos/springWithGradle/APIBoot/src/main/java/com/marcos/springwithgradle/controller/Controller.java:52: error: cannot find symbol
+      public ResponseEntity<String> valid(@RequestBody @Valid Filmes filmes){
+                                                              ^
+    symbol:   class Filmes
+    location: class Controller
+  /home/maanaim-som/estudos/springWithGradle/APIBoot/src/main/java/com/marcos/springwithgradle/controller/Controller.java:52: error: cannot find symbol
+      public ResponseEntity<String> valid(@RequestBody @Valid Filmes filmes){
+                                                        ^
+    symbol:   class Valid
+    location: class Controller
+  /home/maanaim-som/estudos/springWithGradle/APIBoot/src/main/java/com/marcos/springwithgradle/controller/Controller.java:51: error: cannot find symbol
+      @PostMapping
+       ^
+    symbol:   class PostMapping
+    location: class Controller
+  /home/maanaim-som/estudos/springWithGradle/APIBoot/src/main/java/com/marcos/springwithgradle/DTO/request/Filmes.java:6: error: class FilmeRequest is public, should be declared in a file named FilmeRequest.java
+  public record FilmeRequest(
+         ^
+  5 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 49s
+/home/maanaim-som/estudos/springWithGradle/APIBoot/src/main/java/com/marcos/springwithgradle/DTO/request/Filmes.java:6: error: class FilmeRequest is public, should be declared in a file named FilmeRequest.java
+public record FilmeRequest(
+       ^
+/home/maanaim-som/estudos/springWithGradle/APIBoot/src/main/java/com/marcos/springwithgradle/controller/Controller.java:18: error: cannot find symbol
+import com.marcos.springwithgradle.dto.request.Filmes;
+                                              ^
+  symbol:   class Filmes
+  location: package com.marcos.springwithgradle.dto.request
+2 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  /home/maanaim-som/estudos/springWithGradle/APIBoot/src/main/java/com/marcos/springwithgradle/controller/Controller.java:18: error: cannot find symbol
+  import com.marcos.springwithgradle.dto.request.Filmes;
+                                                ^
+    symbol:   class Filmes
+    location: package com.marcos.springwithgradle.dto.request
+  /home/maanaim-som/estudos/springWithGradle/APIBoot/src/main/java/com/marcos/springwithgradle/DTO/request/Filmes.java:6: error: class FilmeRequest is public, should be declared in a file named FilmeRequest.java
+  public record FilmeRequest(
+         ^
+  2 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 4s
